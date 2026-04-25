@@ -1,0 +1,27 @@
+{
+  "name": "@pi-packages/collection",
+  "version": "0.1.0",
+  "description": "A collection of custom packages and extensions for pi",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [
+    "pi-package"
+  ],
+  "pi": {
+    "extensions": [
+      "packages/*/extensions"
+    ],
+    "skills": [
+      "packages/*/skills"
+    ],
+    "prompts": [
+      "packages/*/prompts"
+    ],
+    "themes": [
+      "packages/*/themes"
+    ]
+  }
+}

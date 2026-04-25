@@ -7,12 +7,14 @@ A collection of custom packages and extensions for [pi](https://github.com/mario
 You can install packages directly from this repository using `pi install`:
 
 ```bash
-pi install git:github.com/etra/pi-packages/relay
+pi install git:github.com/etra/pi-packages
 ```
+
+This will install the entire collection. You can then use `pi config` (or edit your `.pi/settings.json`) to toggle individual plugins on or off.
 
 | Package | Description |
 |---|---|
-| [**relay**](./relay) | Delegate tasks to external CLI coding agents (Claude Code, OpenCode) from within pi without losing your session context. Provides `/relay` interactive bridge mode and the `relay_task` sub-agent tool. |
+| [**relay**](./packages/relay) | Delegate tasks to external CLI coding agents (Claude Code, OpenCode) from within pi without losing your session context. Provides `/relay` interactive bridge mode and the `relay_task` sub-agent tool. |
 
 ---
 
@@ -20,7 +22,7 @@ pi install git:github.com/etra/pi-packages/relay
 
 To create a new package in this repository:
 
-1. Create a new folder (e.g. `my-package/`).
+1. Create a new folder in `packages/` (e.g. `packages/my-package/`).
 2. Add a `package.json` with the `"pi"` manifest keyword:
    ```json
    {
