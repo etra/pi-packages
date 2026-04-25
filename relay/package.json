@@ -1,0 +1,15 @@
+{
+  "name": "@pi-packages/relay",
+  "version": "0.1.0",
+  "description": "Delegate tasks to external CLI coding agents (Claude Code, OpenCode, …) from within pi",
+  "keywords": ["pi-package"],
+  "type": "module",
+  "license": "MIT",
+  "pi": {
+    "extensions": ["./extensions"]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "typebox": "*"
+  }
+}
